@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ba">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--Bootstrap-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+	<!--FontAwesome-->
+	<script src="https://kit.fontawesome.com/c83535783c.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!--MojCSS-->
+	<link rel="stylesheet" href="../CSS/main.css">
+	<link rel="stylesheet" href="../CSS/Header.css">
+	<link rel="stylesheet" href="../CSS/Footer.css">
+	<link rel="stylesheet" href="../CSS/Projekti.css">
+	
+	<!--Ikona-->
+	<link rel="icon" href="../Slike/Main/ikona.ico">
+	
+
+	<title>Emin Mulaimović</title>
+</head>
+<body>
+	<main class="container-fluid" id="Top">
+		<div class="row">
+			<header class="col-xxl-2 col-lg-3 col-md-12 col-sm-12 col-xs-12 pt-5">
+				<h2 class="d-flex justify-content-center text-center px-3 pb-3">Emin Mulaimović</h2>
+				<figure class="d-flex justify-content-center px-3">
+				<a href="../index.html"><img class="img-fluid rounded-circle header-slika"src="../Slike/Main/Profilna.jpg"></a>
+				</figure>
+				<figcaption class="d-flex justify-content-center text-center px-3 pb-5">
+					Ja sam student na PMF-u. Trenutno sam na trećoj godini, i ovo je moj portfolio iz web programiranja
+				</figcaption>
+				<input type="text" name="naslov" id="naslov" placeholder="Pretraži" class="form-control">
+				<nav class="d-flex justify-content-center pt-lg-5 pt-md-2">
+					<ul class="nav flex-column">
+					  <li class="nav-item">
+					    <a class="nav-link" aria-current="page" href="../Index.html"> <i class="fa-solid fa-house"></i> Početna</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link active" href="Projekti.html"> <i class="fa-solid fa-graduation-cap"></i> Projekti</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" href="Blog.html"> <i class="fa-solid fa-pencil"></i> Blog</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" href="Trening.html"> <i class="fa-solid fa-dumbbell"></i> Trening</a>
+					  </li>
+					  <li class="nav-item">
+					   <a class="nav-link" href="Manga.html"> <i class="fa-solid fa-book-open"></i> Manga</a>
+					  </li>
+					</ul>
+				</nav>
+			</header>
+
+
+			<div class="col-xxl-10 col-lg-9 col-md-12 col-sm-12 col-xs-12">
+
+				<div class="projekat row justify-content-center">
+					<main class="card col-10 mt-5 mb-5">
+						<aside class="pb-5">
+							Email: <a href="mailto:emin.mulaimovic2305@gmail.com">emin.mulaimovic2305@gmail.com</a><br>
+							Broj Telefona: (+387) 062 305 391
+						</aside>
+
+						<article>
+							<h2 class="pb-3">Parser i Evaluator za matrice</h2>
+							<p>
+								Zadatak je bio da implementiramo klasu Mastrica koja čuva matricu proizvoljnih dimenzija. Potrebno je bilo da se preklope operatori << i >>, pri čemu prvi operator bi ispisivao matricu na ekran, a drugi omogućavao unos objekata tipa Matrica sa tastature. Format za unošenje matrice formata 2 × 3 sa tastature je bio [1 2 3; 4 5 6]. Međutim, potrebno je bilo podržati unos i složenijih izraza, kao npr. <br>
+								[1 2; 3 4]^3 ∗ (4 ∗[1 2 3; 4 5 6] + [7 8; 9 1; 2 4]^𝑇) − [1 3; 7 2]^ − 1 ∗ [7 8 1; 1 2 3] ∗ 𝐼3<br>Očigledno je radi ovoga bilo potrebno da implementiramo transponovanje i inverziju matrica, In predstavlja jediničnu matricu dimenzija nxn. Ukoliko izraz nije bio validan iz nekog razloga (npr. nisu se slagale dimenzije matrica), trebalo je baciti izuzetak. Na kraju je još trebalo imlementirati funkciju koja računa determinantu matrice (ukoliko se radilo o kvadratnoj matrici). Za množenje sam koristio Gaus-Seidelove metod koji strategijom podjeli pa vladaj djeli matricu na više podmatrica. Ovaj metod radi samo za matrice stepena dvice pa sam morao odgovarajuću matricu popuniti 0-ama da ima veličinu stepena dvice. Ispis sam namjestio da mi bude uredan, svaki broj je ispisan sa isto decimala dodavnjem 0-a.
+							</p>
+							<img src="../Slike/Projekti/Projekat1.jpg" class="px-5 pb-3">
+						</article>
+					</main>
+				</div>
+
+				<div class="projekat d-flex align-items-center">
+					<div class="card-deck row justify-content-center">
+
+					<div class="card col-xl-3 col-lg-5 col-md-10 p-0 m-3 mt-5">
+						<img src="../Slike/Projekti/Treap.png" class="card-img-top">
+						<div class="card-body">
+							<h5 class="card-title">Treap</h5>
+							<p class="card-text">Moj drugi projekat na fakultetu, vezano je za balansovanje binarnog stabla koristeći nasumične brojeve kao i implementacija nekih dodatnih funkcionalnosti</p>
+						</div>
+						 <div class="card-footer">
+							<a href="Treap.html" class="btn">Pročitaj više</a>
+						</div>
+					</div>
+
+					<div class="card col-xl-3 col-lg-5 col-md-10 p-0 m-3 mt-5">
+						<img src="../Slike/Projekti/GameTheory.png"  class="card-img-top">
+						<div class="card-body">
+							<h5 class="card-title">Teorija Igara</h5>
+							<p class="card-text">
+								Moj maturski rad za vrijeme srednje škole je bio na temu Teorije Igara. Veoma zanimljiva i kompleksna oblast matematike koja na prvi pogled izgleda vrlo jednostavno.
+							</p>
+						</div>
+						<div class="card-footer">
+							<a href="TeorijaIgara.html" class="btn">Pročitaj više</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+				<footer class=" row d-flex align-items-center justify-content-start mt-5 pt-5 pb-5">
+					<div class="col-xxl-3 col-lg-4 footer-info text-center">
+						<a href="https://www.facebook.com/emin.mulaimovic" target="_blank" class="p-3 pb-5 nav-link fa fa-facebook"></a>
+						<a href="https://www.instagram.com/emin.mulaimovic" target="_blank" class="fa fa-instagram p-3 pb-5 nav-link"></a>
+						<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="fa fa-reddit p-3 pb-5 nav-link"></a>
+						<br>
+						2022 &copy; <a href="#Top" class="p-2 footer-link"> Nazad na vrh</a>
+					</div>
+					<div class="col-xxl-9 col-lg-8 col-md-12">
+						<div class="row text-center pt-5">
+							<h3 class="pb-3">Kontaktiraj me</h3>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<form>
+									<label for="ime" class="col-form-label">Ime </label>
+									<input type="text" name="ime" id="ime" placeholder="Vaše ime" class="form-control">
+
+									<br>
+
+									<label for="prezime" class="form-label">Prezime </label>
+									<input type="text" name="prezime" id="prezime" placeholder="Vaše prezime" class="form-control">
+
+									<br>
+									<label for="mail" class="form-label">E-mail </label>
+									<input type="email" name="mail" id="mail" placeholder="Vaš mail" class="form-control">
+								</form>
+							</div>
+
+							<div class="col-md-6">
+								<form>
+									<label for="naslov_poruke" class="form-label">Naslov poruke </label>
+									<input type="text" name="naslov" id="naslov" placeholder="Naslov poruke" class="form-control">
+
+									<br>
+									<label for="sadrzaj" class="form-label">Sadržaj </label>
+									<textarea name="poruka" id="poruka" cols="20" rows="6" placeholder="Vaša poruka" class="form-control"></textarea>
+								</form>
+							</div>
+						</div>
+						<div class="row">
+							<form>
+								<button type="submit" class="btn col-lg-3 col-md-4 col-sm-4 col-xs-4 mt-3 submit">Pošalji</button>
+							</form>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+	</main>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@300;400;500;600;700&display=swap');
+
+
+
+/*Varijable*/
+:root {
+  --main: #EB5136;
+  --main-dark: #8F2614;
+  --main-light: #FF7057;
+  --complementary-dark: #068F54;
+  --complementary-light: #35DB94;
+  --tab1: calc(1vw + 1rem);
+  --tab2: calc(2vw + 2rem);
+  --tab3: calc(3vw + 3rem);
+}
+
+
+
+.carousel .carousel-indicators li {background-color: black;}
+
+.carousel .carousel-indicators li.active {background-color: black;}
+
+.carousel-indicators [data-bs-target] { background-color: var(--main-dark); }
+
+.trening img{ max-width:400px; }
+
+.carousel{ max-width: 400px; }
+
+.trening .card{
+  height: calc(650px + 12vw);
+  box-shadow: none;
+  border: none;
+}
+
+.trening .card-body{ border: solid 2px black; }
+
+.trening li{
+  font-size: calc(0.7rem + 0.5vw);
+  padding: 0;
+}
+
+.trening p{ padding-bottom: 1rem; }
+
+.card-text{ font-size: calc(0.5rem + 0.4vw)}

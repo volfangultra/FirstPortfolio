@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@300;400;500;600;700&display=swap');
+
+
+
+/*Varijable*/
+:root {
+  --main: #EB5136;
+  --main-dark: #8F2614;
+  --main-light: #FF7057;
+  --complementary-dark: #068F54;
+  --complementary-light: #35DB94;
+  --tab1: calc(1vw + 1rem);
+  --tab2: calc(2vw + 2rem);
+  --tab3: calc(3vw + 3rem);
+}
+
+
+/* Footer */
+footer{
+  background-color: var(--main-light);
+  color:white;
+}
+
+footer .fa, footer .link, table abbr.skracenica, .footer-link{ color:white; }
+
+.footer-link:visited, footer .fa:visited{ color:white; }
+
+.footer-link:focus, footer .fa:focus{ color:white; }
+
+.footer-link:focus, footer .fa:hover{ color:var(--main-dark); }
+
+
+.fa{ font-size: calc(1.5rem + 0.8vw); }
+
+.submit:hover, .card-footer .btn:hover{ background-color:var(--complementary-dark); }
+
+.submit:active, .card-footer .btn:active{
+  background-color:var(--complementary-light);
+  outline: none;
+}
+
+.submit, .card-footer .btn{
+  background-color:var(--complementary-light);
+  border:none;
+  color:white;
+}

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ba">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--Bootstrap-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+	<!--FontAwesome-->
+	<script src="https://kit.fontawesome.com/c83535783c.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!--MojCSS-->
+	<link rel="stylesheet" href="../CSS/main.css">
+	<link rel="stylesheet" href="../CSS/Header.css">
+	<link rel="stylesheet" href="../CSS/Footer.css">
+	<link rel="stylesheet" href="../CSS/Blog.css">
+
+	<!--Ikona-->
+	<link rel="icon" href="../Slike/Main/ikona.ico">
+
+	<title>Emin Mulaimović</title>
+</head>
+<body>
+	<main class="container-fluid" id="Top">
+		<div class="row">
+			<header class="col-xxl-2 col-lg-3 col-md-12 col-sm-12 col-xs-12 pt-5">
+				<h2 class="d-flex justify-content-center text-center px-3 pb-3">Emin Mulaimović</h2>
+				<figure class="d-flex justify-content-center px-3">
+				<a href="../index.html"><img class="img-fluid rounded-circle header-slika"src="../Slike/Main/Profilna.jpg"></a>
+				</figure>
+				<figcaption class="d-flex justify-content-center text-center px-3 pb-5">
+					Ja sam student na PMF-u. Trenutno sam na trećoj godini, i ovo je moj portfolio iz web programiranja
+				</figcaption>
+				<input type="text" name="naslov" id="naslov" placeholder="Pretraži" class="form-control">
+				<nav class="d-flex justify-content-center pt-lg-5 pt-md-2">
+					<ul class="nav flex-column">
+					  <li class="nav-item">
+					    <a class="nav-link" aria-current="page" href="../Index.html"> <i class="fa-solid fa-house"></i> Početna</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" href="Projekti.html"> <i class="fa-solid fa-graduation-cap"></i> Projekti</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link active" href="Blog.html"> <i class="fa-solid fa-pencil"></i> Blog</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" href="Trening.html"> <i class="fa-solid fa-dumbbell"></i> Trening</a>
+					  </li>
+					  <li class="nav-item">
+					   <a class="nav-link" href="Manga.html"> <i class="fa-solid fa-book-open"></i> Manga</a>
+					  </li>
+					</ul>
+				</nav>
+			</header>
+
+
+			<div class="blog col-xxl-10 col-lg-9 col-md-12 col-sm-12 col-xs-12 mb-0 pb-0">
+
+				<div class="blog-card-top card-deck justify-content-evenly p-5 row">
+					<div class="card col-xl-4 col-lg-6 col-md-12 m-5 p-0">
+						<img src="../Slike/Blog/PC.jpg"  class="card-img-top">
+						<div class="card-body">
+							<h5 class="card-title">Kako izabrati komponente i sastaviti kompjuter?</h5>
+							<p class="card-text">
+								Baš dugo vremena sam se igrao sa komponentama računara i ovdje ću podjeliti neke stvari koje mislim da bi svako trebao znati.
+							</p>
+						</div>
+						<div class="card-footer">
+							<a href="#Kompjuteri" class="btn">Pročitaj više</a>
+						</div>
+					</div>
+
+					<div class="card col-xl-4 col-lg-6 col-md-12 m-5 p-0">
+						<img src="../Slike/Blog/Programing.jpg" class="card-img-top">
+						<div class="card-body">
+							<h5 class="card-title">Poređenje nekih programskih jezika</h5>
+							<p class="card-text">U ovom artiklu ću preko nekih mojih iskustava porediti programske jezike sa kojima sa upoznat</p>
+						</div>
+						 <div class="card-footer">
+							<a href="#Programiranje" class="btn">Pročitaj više</a>
+						</div>
+					</div>
+				</div>
+
+				<article class="card-deck, justify-content-center p-lg-5 p-xs-1 mt-5 mb-5">
+					<div class="card">
+						<div class="p-3">
+							<h2 class="pb-5" id="Kompjuteri">Kako izabrati komponente i sastaviti kompjuter?</h2>
+							<section>
+								<h3>Sadržaj</h3>
+								<ol>
+									<li> <a href="#Uvod">Uvod</a> </li>
+									<li> <a href="#Procesor">Procesor</a> </li>
+									<li> <a href="#Maticna">Matična ploča</a> </li>
+									<li> <a href="#RAM">RAM</a> </li>
+									<li> <a href="#Memorija">Memorija</a> </li>
+									<li> <a href="#Graficka">Grafička</a> </li>
+									<li> <a href="#Napojna">Napojna jedinica</a> </li>
+									<li> <a href="#Kuciste">Kučište</a> </li>
+								</ol>
+							</section>
+
+							<section class="pt-5">
+								<h3 class="pb-4" id="Uvod">Uvod</h3>
+								<p class="text-justify">
+									Dobio sam svoj prvi kompjuter sa 7 godina, uvijek mi je bilo zanimljivo da vidim kako to sve radi. Taj kompjuter sam rastavio i sastavio mnogo puta, sad sam iznenađen kako je zapravo lagano sastaviti kompjuter kupovinom osnovnih komponenti. Možda dijete u mene priča ali sastavljanje kompjutera je baš zabavno, kao skupe lego kockice. U ovom blogu ću objasniti neke osnove i mislim da svako ko pročita ovaj blog će moći sebi izabrati djelove i sastaviti kompjuter.
+								</p>
+							</section>
+							<section class="pt-5">
+								<h3 class="pb-4" id="Procesor">Procesor</h3>
+								<p class="text-justify">
+									<img src="../Slike/Blog/Processor.jpg" alt="Slika procesora">Procesor je najvažniji dio kompjutera, a ujedno i najmanji. On vrši sve kalkulacije i uglavnom je centralni dio računara.
+									Bitne specifikacije koje trebate znati za procesore je <strong>brzina procesora</strong> i <strong>broj jezgri</strong>. Brzina procesora se mjeri u <i>GHZ</i>, broj operacija u sekundi (<dfn>1 GHZ</dfn> je 1 milijarda operacija u sekundi). <dfn>Broj jezgri</dfn> je u principu koliko operacija procesor može da radi u paralelno (poželjno je 4).
+									Da bi izabrali processor trenutno imamo dva izbora <em>AMD</em> ili <em>Intel</em>. Svake godine te kompanije izbacuju nove verzije processora, gdje su uglavnom malo bolji od onih iz prethodne godine. Nove verzije processora zovemo generacije. Trenutno je Intel u 13toj generaciji a AMD u 7oj. <mark>Ako gledate najnovije trenutno je Intel jeftiniji i bolji</mark>, od 10te do 13te generacije je bolji AMD a prije 10te generacije je bolji Intel. Verzije procesora su dosta slične (i-intel a Ryzen je AMD).
+								</p>
+								<table class="table">
+									<tr class="table-head">
+										<td>Verzija</td>
+										<td>Karakteristike</td>
+									</tr>
+									<tr>
+										<td scope="col">i3, Ryzen 3</td>
+										<td scope="col">Najslabija i najjeftinija verzija</td>
+									</tr>
+									<tr>
+										<td scope="col">i5, Ryzen 5</td>
+										<td scope="col">Najčešće kupljena, daje dobar balans između cjene i performansi</td>
+									</tr>
+									<tr>
+										<td scope="col">i7, Ryzen 7</td>
+										<td scope="col">Nekada je bila najbolja, sada je često preskaču radi i9-ke, najmanje isplativa ali bolja od i5</td>
+									</tr>
+									<tr>
+										<td scope="col">i9, Ryzen 9</td>
+										<td scope="col">Najbolje što imaju u ponudi</td>
+									</tr>
+								</table>
+								<p>
+									AMD uz ovo još u ponudi ima <strong>ThreadRipper</strong>. <dfn>ThreadRipper</dfn> je procesor sa mnogo jezgri (32 ili čak 64) i on se koristi za servere ili za neke aplikacije koje zahtjevaju mnogo jezgri.
+									Uz procesor često dođe i hladnjak za processor, svaki se malo drugačije instalira, ali najlakše je samo <strong>pogledati upustva</strong>.
+								</p>
+							</section>
+
+							<section class="pt-5">
+								<h3 class="pb-4" id="RAM">RAM</h3>
+								<p>
+									<img src="../Slike/Blog/RAM.jpg" alt="Slika RAM-a"> <abbr title="Random Access Memory" class="skracenica">RAM</abbr> je radna memorija računara. 
+									Ovo nije memorija na kojo se nalaze slike, ona je kao radni stol, memorija gdje stoje stvari dok se obrađuju a ladice bi predstavljale stvarnu memoriju. Razlika između RAM-a i obične memorije je što je RAM veoma brz, ali nakon resetovanja sve se briše sa RAM-a. RAM generacije rjeđe izlaze (svakih 5 godina). Kada biramo RAM opet se gleda brzina, generacija i kapacitet.Moguće je uzeti više RAM stikova. Dobro bi bilo uzet bar 2 jer tada se koristi <strong>dual channel</strong> i sve radi brže. Generacije se označavaju sa DDR i imamo: DDR1, DDR2, DDR3, DDR4,DDR5 <br>
+									<mark>DDR4 je trenutno najisplativiji. Minimalan kapacitet je 8GB ali ja bi preporučio 16GB, brzina je manje bitna.</mark>
+								</p>
+							</section>
+							<section class="pt-5">
+								<h3 class="pb-4" id="Maticna">Matična ploča</h3>
+								<p>
+									<img src="../Slike/Blog/Motherboard.jpg" alt="Slika RAM-a">Matična ploča je mjesto gdje sve komponente računara leže. Pomoću nje se vrši komunikacija svih komponenti.
+									<mark>Važno je prvo izabrati processor i onda provjeriti socket Processora i tražiti matične ploče sa tim socketom.</mark> <dfn>Socket</dfn> je ležište u koje procesor ide i lahko je za svaki procesor provjeriti koje ležište ima. Noviji intel-ovi su svi <em>LGA1700</em> dok su AMD-ovi <em>AM4 ili AM5</em>.
+									Postaviti procesor u matičnu je poprilično lagano samo provjerite orjenataciju u upustvima i polako ga spustite u mjesto.Slično se stavlja i RAM.<br>
+									<div class="d-flex justify-content-center">
+										<img src="../Videji/Blog/InsertingProcessor.gif" alt="Umetanje procesora" class="gif p-0">
+										<img src="../Videji/Blog/InsertingRAM.gif" alt="Umetanje RAM-a" class="gif p-0">
+									</div>
+								</p>
+								<p>
+									Matične dolaze u raznim veličima u zavisnosti od kakav kompjuter pravite. Od veličina imamo:
+								</p>
+								<table class="table">
+									<tr class="table-head">
+										<th>Naziv</th>
+										<th>Veličina</th>
+										<th>Namjena</th>
+									</tr>
+									<tr>
+										<td><abbr class="skracenica" title="Full-ATX">ATX</abbr></td>
+										<td>305mm x 244mm</td>
+										<td>Kompjutere gdje je potrebno mnogo konektora</td>
+									</tr>
+									<tr>
+										<td><abbr class="skracenica" title="Micro-ATX">mATX</abbr> </td>
+										<td>244 × 244 mm</td>
+										<td>Standardne kompjutere</td>
+									</tr>
+									<tr>
+										<td><abbr class="skracenica" title="Mini-ITX">ITX</abbr> </td>
+										<td>170 mm × 170 mm</td>
+										<td>Minimalistički kompjuteri</td>
+									</tr>
+								</table>
+								<p>
+									Ostalo je sve poprilično intuitivno samo <strong>pogledajte upustva</strong>!
+								</p>
+							</section>
+							<section class="pt-5">
+								<h3  class="pb-4" id="Memorija">Memorija</h3>
+								<div class="d-flex memorija">
+									<div class="card">
+										<img src="../Slike/Blog/HDD.jpg" alt="Slika HDD-a" class="card-image-top">
+										<div class="text-center card-body">
+											<h5>HDD</h5>
+										</div>
+									</div>
+									<div class="card">
+										<img src="../Slike/Blog/NVME.jpg" alt="Slika NVME-a">
+										<div class="text-center card-body">
+											<h5>SSD</h5>
+										</div>
+									</div>
+									<div class="card">
+										<img src="../Slike/Blog/SSD.jpg" alt="Slika SSD-a">
+										<div class=" text-center card-body">
+											<h5>NVME SSD</h5>
+										</div>
+									</div>
+								</div>
+								<p>
+									Memorija kompjutera može biti u više tipova imamo <abbr title="Hard Drive">HDD</abbr> i <abbr title="Solid State Drive">SSD</abbr>. <dfn>HDD</dfn> ima ogroman kapacitet, malu cijenu ali i male brzine. Nalazi se van matične ploče povezan sa SATA kablom.
+									SSD se dalje djeli u dva tipa imamo:
+								</p>
+								<dl>
+									<dt>Standardni SSD</dt> <dd>koji su skuplji i brži i nalaze se van matične ploče.</dd>
+									<dt>N.V.M.E. SSD</dt> <dd>koji su iste cijene kao SSD ali su brži i nalaze se na matičnoj ploči.</dd>
+								</dl>
+								<p>
+									<mark>Najefikasnije je staviti operativni sistem i par bitnih stvari na N.V.M.E. i ostalo na HDD</mark>
+								</p>
+							</section>
+							<section class="pt-5">
+								<h3  class="pb-4" id="Graficka">Grafička</h3>
+								<p>
+									Procesori često imaju svoju integrisanu grafičku koja može da prikaže sliku na monitoru. Ona je inače poprilično slaba ali je dovoljno jaka za neke osnovne potrebe. Grafička kartica radi to ali mnogo bolje. Razlika između grafičke i procesora je u tome što grafička ima mnogo jezgri, nekad i 2000, ali su dosta slabije od onih na procesoru.
+									<br><img src="../Slike/Blog/Graficka.jpg" alt="Slika Graficke"><br>
+									Grafičke su potrebne ako planirate <em>igrati igrice, koristiti neke optimizacije u programiranju, ili se baviti grafičkim dizajnom</em>. Trenutno grafičke kartice proizvode tri kompanije <strong>NVIDIA</strong>, <strong>AMD</strong> i <strong>Intel</strong>. NVIDIA je najbolja i ima donekle monopol nad grafičkim, AMD je usko uz nju ali je slabiji, a Intel je tek ove godine počeo praviti grafičke. Trenutno su Intelove grafičke baš loše ali treba ih podržati da se smanji monopol. <mark>Sve u svemu za sada je najbolja NVIDIA</mark>.
+								</p>
+							</section>
+							<section class="pt-5">
+								<h3  class="pb-4" id="Napojna">Napojna jedinica</h3>
+								<p>
+									<img src="../Slike/Blog/PSU.jpg" alt="Slika napojne">Napojna jedinica je uređaj koji daje struju kompjuteru.
+									Snaga se mjeri u Watima a efikasnost ima svoje certifikacije:
+								</p>
+									<dl> 
+										<dt>80 Plus</dt><dd>80% efikasnost</dd>
+										<dt>80 Plus Bronze</dt><dd>85% efikasnost</dd>
+										<dt>80 Plus Silver</dt><dd>88% efikasnost</dd>
+										<dt>80 Plus Gold</dt><dd>90% efikasnost</dd>
+										<dt>80 Plus Platinum</dt><dd>92% efikasnost</dd>
+										<dt>80 Plus Titanium</dt><dd>94% efikasnost</dd>
+									</dl>
+									<p>
+										<mark>Kada birate napojnu samo izmati onu koja ima bilo kakvu certifikaciju.</mark> Vrlo je lagano malo potrošiti na napojnu ali je moguće spržiti sve ako se uzme nešto nekvalitetno. <strong>Napojnu treba koristiti isključivo sa kablovima koji dođu uz nju i nikakav drugi.</strong> Da bi izabrali tačnu jačinu napojne pogledajte koliko wati vuče procesor i grafička i dodajte oko 100W preko toga.
+									</p>
+							</section>
+							<section class="pt-5">
+								<h3  class="pb-4" id="Kuciste">Kučište</h3>
+								<p>
+									<img src="../Slike/Blog/Kuciste.jpg" alt="Slika kucista">Kučište je najnebitniji dio računara. To je samo mjesto gdje smještate matičnu ploču i može biti obična kartonska kutija.
+									<mark>Kada birate kučište samo provjerite koje veličine je matična ploča i izaberite odgovarajući.</mark>
+								</p>
+							</section>
+						</div>
+					</div>
+
+				</article>
+
+
+
+				<article class="card-deck, justify-content-center p-lg-5 p-xs-1 mt-5">
+					<div class="card">
+						<div class="p-3">
+							<section>
+								<h2 class="pb-5" id="Programiranje">Poređenje nekih programskih jezika</h2>
+								<h3>Sadržaj</h3>
+								<ol>
+									<li> <a href="#Okvirno">O programskim jezicima</a> </li>
+									<li> <a href="#Python">Python</a> </li>
+									<li> <a href="#C++">C++</a> </li>
+									<li> <a href="#Java">Java</a> </li>
+									<li> <a href="#Zakljucak2">Zaključak</a> </li>
+								</ol>
+							</section>
+
+							<section class="pt-5">
+								<h3 id="Okvirno">O programskim jezicima</h3>
+								<p>
+									Tokom studiranja na ovom fakultetu sam imao susret sa nekim programskim jezicima. Ovdje bih volio da poredim programske jezike po <strong>mom mišljenju</strong> i <strong>mojim iskustvima</strong>. Odlučio sam da u svakom od navedenih programskih jezika uradim jednostavan zadatak koji bi nam pokaziao sintaksu jezika. Zadatak glasi:<br> <cite>"Unijeti niz brojeva u jednom redu te ih ispisati unazad. Npr Za niz 1 2 3 4 5 6 treba ispisati 6 5 4 3 2 1."</cite>
+								</p>
+							</section>
+
+							<section class="pt-5">
+								<h3  class="pb-4" Id="Python">Python</h3>
+								<p>
+									Python je prvi programski jezik koji sam naučio. On je po meni najjednostavniji, vrlo je sličan pseudokodu i sve nekako radi u njemu. Ovaj jezik ima Garbage Collector pa se ne moramo briniti za alociranje memorije. Kada deklarišemo varijable ne moramo znati tip varijable. U niz možemo stavljati porizvoljno mnogo različitih tipova. Jedina mana ovog jezika je u tome što je dosta spor u odnosu na ostale. Zadatak iz uvoda:<br>
+									<code>
+									niz = input().split()<br>
+									for i in range(len(niz) - 1, -1, -1):<br>
+									    <tab1 class="tab1">print(niz[i], end=" ")</tab1>
+									</code>
+								</p>
+							</section>
+
+							<section class="pt-5">
+								<h3  class="pb-4" id="C++">C++</h3>
+								<p>
+									C++ je drugi jezik koji sam naučio. Meni je iskreno za sada najdraži jezik, veoma je brz jer nema Garbage Collector. Dosta je intuitivan jezik šta očekujete da radi radi. Automatske konverzije su fenomenalne. Ovo je po meni najprecizniji jezik i zato je najsličniji matematici. Kod je veoma uredan zbog header fajlova. Na početku je veoma frustrirajuće raditi u njemu jer nekako ništa ne radi kako treba ali sa vremenom postane fenomenalan. Zadatak iz uvoda:<br>
+									<code>
+										#include &lt;iostream&gt;<br> 
+										#include &lt;list&gt;<br> 
+										#include &lt;string&gt;<br> 
+										using namespace std;<br> 
+										int main(){<br> 
+										    <tab1>string s;<br></tab1>
+										    <tab1>list&lt;int&gt; brojevi;<br></tab1>
+										    <tab1>while(cin.peek() != '\n'){<br></tab1>
+										        <tab2>int a;<br></tab2>
+										        <tab2>cin >> a;<br></tab2>
+										        <tab2>brojevi.push_front(a);<br></tab2>
+										        <br>
+										    <tab1>}<br></tab1>
+										    <br>
+										    <tab1>for(auto el:brojevi)<br></tab1>
+										        <tab2>cout << el << " ";<br></tab2>
+										    <br>
+										}
+
+									</code>
+
+								</p>
+							</section>
+
+							<section class="pt-5">
+								<h3  class="pb-4" id="Java">Java</h3>
+								<p>
+									Java je kao jednostavniji C++ koji ima Garbage Collector. Varijable se moraju deklarisat sa tipom i sve je organizirano u klase. Po mom mišljenju je dosta neuredan kod jer se sve mora implementirati unutar klase. Najveća prednost jave je što nije vezana za operativni sistem pa java aplikacija može biti pokrenuta na telefonu, printeru, frižideru, televizoru ili bilo kakvom pametnom uređaju sa dovoljno jakim kompjuterom. Zadatak iz uvoda:<br>
+									<code>
+										import java.util.LinkedList;<br>
+										import java.util.Scanner;<br>
+
+										public class Main {<br>
+											<br>
+											<tab1>public static void main(String[] args) {</tab1> <br>
+												<tab2>Scanner ulaz = new Scanner(System.in);</tab2> <br>
+												<tab2>String s;</tab2> <br>
+												<tab2>s = ulaz.nextLine();</tab2> <br>
+												<tab2>String[] pomoc = s.split(" ");</tab2> <br>
+												<tab2>for(int i = pomoc.length - 1; i >=  0; i-=1)</tab2> <br>
+													<tab3>System.out.print(pomoc[i] + " ");</tab3> <br>
+												<br>
+											<tab1>}</tab1> <br>
+										<br>
+										}<br>
+									</code>
+								</p>
+							</section>
+
+							<section class="pt-5">
+								<h3  class="pb-4" id="Zakljucak2">Zaključak</h3>
+								<p>
+									Možda mi mišljenje nije baš najobjektivnije sa obzirom da najviše radim u Cpp-u ali to mi je nekako <strong>najljepši jezik</strong>. Ovdje ću Vam ostaviti video sa popularnosti programskih jezika:
+									<br>
+									<div class="d-flex justify-content-center">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/qogEJSNZTPA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										<br>
+									</div>
+								</p>
+							</section>
+						</div>
+					</div>
+				</article>
+
+
+				<footer class=" row d-flex align-items-center justify-content-start mt-5 pt-5 pb-5">
+					<div class="col-xxl-3 col-lg-4 footer-info text-center">
+						<a href="https://www.facebook.com/emin.mulaimovic" target="_blank" class="p-3 pb-5 nav-link fa fa-facebook"></a>
+						<a href="https://www.instagram.com/emin.mulaimovic" target="_blank" class="fa fa-instagram p-3 pb-5 nav-link"></a>
+						<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="fa fa-reddit p-3 pb-5 nav-link"></a>
+						<br>
+						2022 &copy; <a href="#Top" class="p-2 footer-link"> Nazad na vrh</a>
+					</div>
+					<div class="col-xxl-9 col-lg-8 col-md-12">
+						<div class="row text-center pt-5">
+							<h3 class="pb-3">Kontaktiraj me</h3>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<form>
+									<label for="ime" class="col-form-label">Ime </label>
+									<input type="text" name="ime" id="ime" placeholder="Vaše ime" class="form-control">
+
+									<br>
+
+									<label for="prezime" class="form-label">Prezime </label>
+									<input type="text" name="prezime" id="prezime" placeholder="Vaše prezime" class="form-control">
+
+									<br>
+									<label for="mail" class="form-label">E-mail </label>
+									<input type="email" name="mail" id="mail" placeholder="Vaš mail" class="form-control">
+								</form>
+							</div>
+
+							<div class="col-md-6">
+								<form>
+									<label for="naslov_poruke" class="form-label">Naslov poruke </label>
+									<input type="text" name="naslov" id="naslov" placeholder="Naslov poruke" class="form-control">
+
+									<br>
+									<label for="sadrzaj" class="form-label">Sadržaj </label>
+									<textarea name="poruka" id="poruka" cols="20" rows="6" placeholder="Vaša poruka" class="form-control"></textarea>
+								</form>
+							</div>
+						</div>
+						<div class="row">
+							<form>
+								<button type="submit" class="btn col-lg-3 col-md-4 col-sm-4 col-xs-4 mt-3 submit">Pošalji</button>
+							</form>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+	</main>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ba">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--Bootstrap-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+	<!--FontAwesome-->
+	<script src="https://kit.fontawesome.com/c83535783c.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!--MojCSS-->
+	<link rel="stylesheet" href="../CSS/main.css">
+	<link rel="stylesheet" href="../CSS/Header.css">
+	<link rel="stylesheet" href="../CSS/Footer.css">
+	<link rel="stylesheet" href="../CSS/Projekti.css">
+
+	<!--Ikona-->
+	<link rel="icon" href="../Slike/Main/ikona.ico">
+
+	<title>Emin Mulaimović</title>
+</head>
+<body>
+	<main class="container-fluid" id="Top">
+		<div class="row">
+			<header class="col-xxl-2 col-lg-3 col-md-12 col-sm-12 col-xs-12 pt-5">
+				<h2 class="d-flex justify-content-center text-center px-3 pb-3">Emin Mulaimović</h2>
+				<figure class="d-flex justify-content-center px-3">
+				<a href="../index.html"><img class="img-fluid rounded-circle header-slika"src="../Slike/Main/Profilna.jpg"></a>
+				</figure>
+				<figcaption class="d-flex justify-content-center text-center px-3 pb-5">
+					Ja sam student na PMF-u. Trenutno sam na trećoj godini, i ovo je moj portfolio iz web programiranja
+				</figcaption>
+				<input type="text" name="naslov" id="naslov" placeholder="Pretraži" class="form-control">
+				<nav class="d-flex justify-content-center pt-lg-5 pt-md-2">
+					<ul class="nav flex-column">
+					  <li class="nav-item">
+					    <a class="nav-link" aria-current="page" href="../Index.html"> <i class="fa-solid fa-house"></i> Početna</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link active" href="Projekti.html"> <i class="fa-solid fa-graduation-cap"></i> Projekti</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" href="Blog.html"> <i class="fa-solid fa-pencil"></i> Blog</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" href="Trening.html"> <i class="fa-solid fa-dumbbell"></i> Trening</a>
+					  </li>
+					  <li class="nav-item">
+					   <a class="nav-link" href="Manga.html"> <i class="fa-solid fa-book-open"></i> Manga</a>
+					  </li>
+					</ul>
+				</nav>
+			</header>
+
+
+			<div class="col-xxl-10 col-lg-9 col-md-12 col-sm-12 col-xs-12">
+
+				<div class="projekat row justify-content-center">
+					<main class="card col-10 mt-5 mb-5">
+						<aside class="pb-5">
+							Mentor: Fatima Bušatlić <br>
+							<abbr class = "skracenica" title="Mješovita srednja škola Travnik">MSŠT</abbr> <br>
+							Travnik <br>
+							Školska br. 3<br>
+							<a href="http://msstravnik.net" target="_blank">Stranica škole</a>
+						</aside>
+
+						<article>
+							<h2 class="pb-3">Treap</h2>
+							<p>
+								Stablo je jednostavan povezan acikličan grad, a binarno stablo je stablo u kojem svaki čvor može imati najviše povezan sa dva druga čvora. Mi takve čvorove zovemo djeca i specijalno imamo lijevo i desno djete. Postoje mnoge metode koje služe za održavanje balansiranosti binarnog stable pretrage (kao što su AVL  stabla  ili  crveno-crna  stabla). Jedan od načina je da se simulira slučajni redoslijed umetanja u stablo,  odakle  onda  na  osnovu  teorije vjerovatnoće slijedi da će stablo biti balansirano sa velikom vjerovatnoćom (tj. visina stabla će biti 𝑂(log𝑛)). Ideja je da elementi stabla pored vrijednosti (koja će u ovom slučaju biti i ključ za pretragu), sadrže i prioritete, koji se slučajno generišu pri umetanju elemenata u stablo. Svaka dva čvora treba da zadovoljavaju osobinu heapa za prioritete, tj. svaki čvor ima veći prioritet od svog djeteta, a manji od svog roditelja. Operacije koje je potrebno podržati (sve treba da rade u vremenu 𝑂(log𝑛)):
+							</p>
+							<ul>
+								<li>Pretraga koja se vrši kao u običnom binarnom stablu, po vrijednosti (koja je ujedno i ključ).</li>
+								<li>Umetanje i Brisanje pri tome da se zadovoljava osobina heapa za prioritete.</li>
+								<li>Razdvajanje –funkcija koja prima stablo i neku vrijednost ključa 𝑘(za koji se može pretpostaviti da ne postoji u stablu), te vraća par stabala, jedno stablo gdje su svi elementi manji od 𝑘,te drugo stablo gdje su svi elementi veći od 𝑘.</li>
+								<li>Unija je funkciju koja prima dva stabla i vraća njihovu uniju kao stablo.</li>
+							</ul>
+							<p>
+								Stvari se uvijek dodatno zakomplikuju kada se radi sa nasumičnim brojevima jer sve što se može desiti će se desiti. Moj kod je bio poprilično nepredvidljiv pošto sam svaki put generisao druge random brojeve pa bi isto stablo pri osvježavanju koda stablo bi poprimilo skroz drugu strukturu.
+							</p>
+								<img src="../Slike/Projekti/Projekat2.jpg" class="card-img-bottom mb-3">
+
+							
+						</article>
+					</main>
+				</div>
+
+				<div class="projekat d-flex align-items-center">
+					<div class="card-deck row justify-content-center">
+					<div class="card col-xl-3 col-lg-5 col-md-10 p-0 m-3 mt-5">
+						<img src="../Slike/Projekti/Matrica.jpg"  class="card-img-top">
+						<div class="card-body">
+							<h5 class="card-title">Parser i evaluator za matrice</h5>
+							<p class="card-text">
+								Moj prvi projekat na fakultetu, u kratko rečeno radi se o pravljenje kalkulatora za matrice.
+							</p>
+						</div>
+						<div class="card-footer">
+							<a href="Matrica.html" class="btn">Pročitaj više</a>
+						</div>
+					</div>
+
+					<div class="card col-xl-3 col-lg-5 col-md-10 p-0 m-3 mt-5">
+						<img src="../Slike/Projekti/GameTheory.png"  class="card-img-top">
+						<div class="card-body">
+							<h5 class="card-title">Teorija Igara</h5>
+							<p class="card-text">
+								Moj maturski rad za vrijeme srednje škole je bio na temu Teorije Igara. Veoma zanimljiva i kompleksna oblast matematike koja na prvi pogled izgleda vrlo jednostavno.
+							</p>
+						</div>
+						<div class="card-footer">
+							<a href="TeorijaIgara.html" class="btn">Pročitaj više</a>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+
+				<footer class=" row d-flex align-items-center justify-content-start mt-5 pt-5 pb-5">
+					<div class="col-xxl-3 col-lg-4 footer-info text-center">
+						<a href="https://www.facebook.com/emin.mulaimovic" target="_blank" class="p-3 pb-5 nav-link fa fa-facebook"></a>
+						<a href="https://www.instagram.com/emin.mulaimovic" target="_blank" class="fa fa-instagram p-3 pb-5 nav-link"></a>
+						<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="fa fa-reddit p-3 pb-5 nav-link"></a>
+						<br>
+						2022 &copy; <a href="#Top" class="p-2 footer-link"> Nazad na vrh</a>
+					</div>
+					<div class="col-xxl-9 col-lg-8 col-md-12">
+						<div class="row text-center pt-5">
+							<h3 class="pb-3">Kontaktiraj me</h3>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<form>
+									<label for="ime" class="col-form-label">Ime </label>
+									<input type="text" name="ime" id="ime" placeholder="Vaše ime" class="form-control">
+
+									<br>
+
+									<label for="prezime" class="form-label">Prezime </label>
+									<input type="text" name="prezime" id="prezime" placeholder="Vaše prezime" class="form-control">
+
+									<br>
+									<label for="mail" class="form-label">E-mail </label>
+									<input type="email" name="mail" id="mail" placeholder="Vaš mail" class="form-control">
+								</form>
+							</div>
+
+							<div class="col-md-6">
+								<form>
+									<label for="naslov_poruke" class="form-label">Naslov poruke </label>
+									<input type="text" name="naslov" id="naslov" placeholder="Naslov poruke" class="form-control">
+
+									<br>
+									<label for="sadrzaj" class="form-label">Sadržaj </label>
+									<textarea name="poruka" id="poruka" cols="20" rows="6" placeholder="Vaša poruka" class="form-control"></textarea>
+								</form>
+							</div>
+						</div>
+						<div class="row">
+							<form>
+								<button type="submit" class="btn col-lg-3 col-md-4 col-sm-4 col-xs-4 mt-3 submit">Pošalji</button>
+							</form>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+	</main>
+
+</body>
+</html>

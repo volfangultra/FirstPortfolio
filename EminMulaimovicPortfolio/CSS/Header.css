@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@300;400;500;600;700&display=swap');
+
+
+
+/*Varijable*/
+:root {
+  --main: #EB5136;
+  --main-dark: #8F2614;
+  --main-light: #FF7057;
+  --complementary-dark: #068F54;
+  --complementary-light: #35DB94;
+  --tab1: calc(1vw + 1rem);
+  --tab2: calc(2vw + 2rem);
+  --tab3: calc(3vw + 3rem);
+}
+
+
+
+header {
+  color:white;
+  background-color: var(--main);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.header-slika {
+  max-width: 150px;
+}
+
+.form-control:focus{
+  outline: none;
+  box-shadow: 1px 1px 1px 1px var(--complementary-light);
+  border: none;
+}
+
+
+.nav-link{
+  color: white;
+  font-size:calc(1rem + 0.5vw);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.nav-link:visited{ color:white; }
+
+.nav-link:focus{ color: var(--main-dark); }
+
+.nav-link:hover{ color: var(--main-dark); }
+
+.nav-link.active{ color: var(--main-dark); }

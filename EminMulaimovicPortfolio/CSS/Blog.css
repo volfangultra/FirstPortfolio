@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@300;400;500;600;700&display=swap');
+
+
+
+/*Varijable*/
+:root {
+  --main: #EB5136;
+  --main-dark: #8F2614;
+  --main-light: #FF7057;
+  --complementary-dark: #068F54;
+  --complementary-light: #35DB94;
+  --tab1: calc(1vw + 1rem);
+  --tab2: calc(2vw + 2rem);
+  --tab3: calc(3vw + 3rem);
+}
+
+
+.blog-card-top{
+  background-color: #FBFBFB;
+  padding-bottom: 10rem;
+  margin-bottom: 10rem;
+}
+
+.blog article img, .gif{
+  max-height: calc(100px + 6vw);
+  padding-bottom: 1rem;
+  padding-left: var(--tab1);
+}
+
+.gif{
+  border-top: solid 2px var(--complementary-light);
+  border-bottom: solid 2px var(--complementary-light);
+}
+
+article .memorija .card {
+  border:none;
+  box-shadow: none;
+}
+
+
+.blog video{ max-height: calc(150px + 10vw); }
+
+article h2 { text-decoration: underline; }

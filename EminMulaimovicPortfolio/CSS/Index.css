@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@300;400;500;600;700&display=swap');
+
+
+
+/*Varijable*/
+:root {
+  --main: #EB5136;
+  --main-dark: #8F2614;
+  --main-light: #FF7057;
+  --complementary-dark: #068F54;
+  --complementary-light: #35DB94;
+  --tab1: calc(1vw + 1rem);
+  --tab2: calc(2vw + 2rem);
+  --tab3: calc(3vw + 3rem);
+}
+
+
+
+.puzzle img { max-width: 400px; }
+
+.puzzle .card-title{ color:white; }
+
+#Vjestine { font-size: calc(0.5rem + 2vw); }
+
+.skracenica{
+  text-decoration: none !important; 
+  text-transform: none !important;
+}
+
+.profile{
+  background-color: #FBFBFB;
+  text-align: justify;
+}
+
+.puzzle .card {
+  border:none;
+  box-shadow: none;
+}

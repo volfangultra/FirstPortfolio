@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@300;400;500;600;700&display=swap');
+
+
+
+/*Varijable*/
+:root {
+  --main: #EB5136;
+  --main-dark: #8F2614;
+  --main-light: #FF7057;
+  --complementary-dark: #068F54;
+  --complementary-light: #35DB94;
+  --tab1: calc(1vw + 1rem);
+  --tab2: calc(2vw + 2rem);
+  --tab3: calc(3vw + 3rem);
+}
+
+
+
+/* Osnove */
+*{
+  font-family: 'Sono', sans-serif;
+}
+
+p, a, footer{
+  font-size: calc(0.7rem + 0.4vw);
+  text-align: justify;
+}
+
+tab1 { padding-left:var(--tab1) }
+tab2 { padding-left:var(--tab2) }
+tab3 { padding-left:var(--tab3) }
+
+tr {
+  background-color: var(--main);
+  color:white;
+}
+
+.table-head{
+  background-color: var(--main-dark);
+  color:white;
+}
+
+.table{ font-size:calc(0.7rem + 0.4vw); }
+
+mark { background-color: rgba(53,219,148,0.3); }
+
+a{
+  text-decoration: none;
+  text-transform: none;
+  color:var(--main-light);
+}
+
+a:visited{
+  text-decoration: none;
+  text-transform: none;
+  color:var(--main-light);
+}
+
+a:hover{
+  text-decoration: none;
+  text-transform: none;
+  color:var(--main-dark);
+}
+
+h3{ padding-bottom: 1rem; }
+
+code {
+  padding-left: var(--tab1);
+  padding-top: 1rem;
+  display: block;
+  font-size: calc(0.7rem + 0.4vw);
+  color: var(--complementary-light);
+}
+
+ul, ol, dl{ list-style: none; }
+
+li a, li{
+  font-size: calc(1rem + 0.5vw);
+  padding: 0.5rem;
+}
+
+dt, dd{
+  font-size: calc(0.7rem + 0.4vw);
+  padding-left: calc(1rem + 1vw);
+}
+
+dd { padding-left: calc(2rem + 2vw); }
+
+.card-footer{
+  background-color: white;
+  border-top: none;
+}
+.card{
+  border: solid 2px black;
+  box-shadow: 8px 8px var(--main-light); 
+}
+.card-title {
+  font-weight: 600;
+  font-size: calc(0.6rem + 1vw);
+}
